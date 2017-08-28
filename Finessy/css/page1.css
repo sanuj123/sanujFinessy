@@ -1,0 +1,70 @@
+body {
+    margin: 0px;
+    padding: 0px
+}
+
+#header {
+    background-color: #0078ca;
+    height: 100px;
+}
+
+#header h1 {
+    font-size: 350%;
+    color: white;
+}
+
+#header p {
+    color: white;
+}
+
+#carousel-container {
+    /*    margin: 0px;*/
+    /*    padding: 0px;*/
+}
+
+.carousel-content {
+    width: 100%;
+    height: 450px !important;
+}
+
+.grid {
+    padding: 5px;
+    width: auto;
+    height: 200px;
+    !important;
+}
+
+.choices {
+    margin: 30px;
+}
+
+.desc {
+    position: relative;
+    top: -30px;
+    z-index: 1000000;
+    color: azure;
+}
+
+.content {
+    padding-bottom: 2px;
+    padding-top: 25px;
+}
+
+#tile img {}
+
+#tile img:hover {
+    opacity: 0.6;
+    transition-duration: 0.5s;
+    transform: scale(1.02);
+}
+
+.blur-up {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.blur-up.lazyloaded {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
