@@ -21,7 +21,7 @@ body .container{
     margin: 1px;
     border-radius: 5px;
 }
-.row .col-sm-4{
+#page .col-sm-4{
     padding-right: 0px;
     padding-left: 0px;
     width:31%;
@@ -35,7 +35,7 @@ body .container{
     display: inline-block;
     font-family: 'Raleway', serif;
     position: absolute;
-    top:53%;
+    top:50%;
     left:65%;
     text-align: center;
     z-index: 100;
@@ -60,7 +60,6 @@ body .container{
 .tile:hover .view{
     opacity: 1;
     transition: 0.3s;
-    transform: scale(1);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 
 }
