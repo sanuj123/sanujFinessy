@@ -4,7 +4,8 @@ body{
     background-color: #fafafb;
 }
 body .container{
-    margin: 1.5%;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
 }
 .list{
     border-bottom-left-radius: 5px;
@@ -69,4 +70,25 @@ body .container{
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 10% ;
+}
+.top-heading{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    padding-bottom: 1.5%;
+    color: steelblue;
+}
+.content-btn{
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    background-color:dodgerblue ;
+    margin-top: 5%;
+    margin-left: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+
+}
+.content-btn:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 0.3s;
 }
