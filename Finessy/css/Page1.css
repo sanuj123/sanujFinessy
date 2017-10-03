@@ -1,0 +1,192 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+body .container-fluid{
+    margin: 0px; !important;
+    padding: 0px; !important;
+}
+#page-container{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+
+.animate-box{
+    opacity: 0;
+}
+
+ #page-container nav {
+    background-color: #1d2671;
+     margin: 0px;
+     padding: 0px;
+     border: 1px solid #1d2671;
+
+
+
+}
+ .navbar-header div{
+     margin-top: 2%;
+ }
+.navbar-header {
+    font-family: 'Raleway', serif;
+    font-size: large; !important;
+    color: white;
+    padding: 1%;
+    padding-top: 0.1%;
+    padding-bottom: 1.2%;
+
+}
+#header{
+    padding: 0px; !important;
+}
+#main-header button{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 15%;
+    background-color: white;
+    font-family: 'Raleway', serif;
+    color: #000080;
+    font-size: medium;
+    border-radius: 17px;
+    transition:0.5s ease all;
+
+
+}
+#main-header button:hover{
+    width: 150%;
+ }
+/*.nav ul li:hover{*/
+    /*color: red;*/
+    /*background-color: white;*/
+    /*animation-name: trans;*/
+    /*animation-duration: 0.7s;*/
+
+
+/*}*/
+/*@keyframes trans{*/
+    /*from{background-color: red;color: white}*/
+    /*to{background-color: white;color: red}*/
+
+/*}*/
+.effect1
+{
+
+    text-align: center;
+    color: darkgray;
+    background: linear-gradient(to top, #c33764, #1d2671);
+}
+
+.effect2{
+    text-align: center;
+    background: white;
+}
+
+.box-content2{
+    color: #1d2671;
+    margin-top: 4%;
+    background-color: inherit;
+    text-align: center;
+    background-image: linear-gradient(to bottom,#1d2671, #c33764 );
+    color: transparent;
+    font-family: 'Rajdhani', sans-serif;
+    -webkit-background-clip: text;
+    padding-bottom: 2%;
+}
+.box-content2 h2{
+    font-size: 4.6vmax;
+}
+.box-content2 h3{
+    font-size: 2.8vmax;
+}
+.box-content2 p{
+    font-size: 2.7vmax;
+}
+.box-content2 button{
+    border-radius: 17px;
+    border:1px solid #1d2671;
+
+}
+
+.content-btn2{
+    background-color: #1d2671;
+    color: white;
+    font-family: 'Raleway', serif;
+    width: 83%;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.content-btn2:hover{
+     background-color: white;
+    color: #1d2671;
+    width: 79%;
+}
+.content-btn2 span:hover{
+    color: #1d2671;
+}
+
+.box-content1{
+    background-color: inherit;
+    text-align: match-parent;
+    color: white;
+    margin-top: 4%;
+    font-family: 'Rajdhani', sans-serif;
+    padding-bottom: 2%;
+}
+
+.box-content1 h1{
+    font-size: 5.3vmax;
+}
+.box-content1 h3{
+    font-size: 3.1vmax;
+}
+.box-content1 button{
+    border-radius: 17px;
+    border:1px solid white;
+}
+.content-btn1{
+    background-color: white;
+    font-family: 'Raleway', serif;
+    width: 55%;
+    color: #1d2671;
+    transition: all 0.2s ease-in-out;
+}
+.content-btn1:hover{
+    background-color: #c33764;
+    color: white;
+    width: 64%;
+}
+.content-btn1 span:hover{
+    color: white;
+}
+.effect3{
+    background-color: #c33764;
+    color: white;
+    text-align: center;
+}
+.box-content3{
+background-color: inherit;
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+    font-family:'Raleway', serif ;
+    padding-bottom: 1%;
+}
+.box-content3 a{
+    color: inherit;
+
+}
+.box-content3 a:hover{
+    color: white;
+}
+.box-content3 h4{
+    font-size: 1.5vmax;
+}
+.box-content3 h5{
+    font-size: 1.3vmax;
+}

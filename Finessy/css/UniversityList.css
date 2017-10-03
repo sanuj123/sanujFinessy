@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fafafb;
+}
+body .container{
+    margin: 1.5%;
+}
+.list{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'Raleway', serif;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition: 0.3s;
+    padding: 1.5%;
+}
+.tile{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    padding: 0px;
+    margin: 1px;
+    border-radius: 5px;
+}
+.row .col-sm-4{
+    padding-right: 0px;
+    padding-left: 0px;
+    width:31%;
+    margin: 1.1%;
+}
+.animate-box{
+    opacity: 0;
+}
+.view{
+    background-color: #fafafb;
+    display: inline-block;
+    font-family: 'Raleway', serif;
+    position: absolute;
+    top:53%;
+    left:65%;
+    text-align: center;
+    z-index: 100;
+}
+.tile:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.tile:hover .list {
+    border-left:6px solid dodgerblue;
+
+}
+.tile:hover img{
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.tile img{
+    width:100%;
+}
+.tile:hover .view{
+    opacity: 1;
+    transition: 0.3s;
+    transform: scale(1);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+
+}
+.tile.col-sm-12{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10% ;
+}
