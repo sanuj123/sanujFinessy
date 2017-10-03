@@ -6,10 +6,6 @@ body{
 body .container{
     margin: 1.5%;
 }
-body .container .row{
- margin-right: 0px;
-}
-
 .list{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
