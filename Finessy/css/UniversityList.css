@@ -35,7 +35,7 @@ body .container{
     display: inline-block;
     font-family: 'Raleway', serif;
     position: absolute;
-    top:50%;
+    top:40%;
     left:65%;
     text-align: center;
     z-index: 100;
