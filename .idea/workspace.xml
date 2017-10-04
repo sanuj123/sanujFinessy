@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c97f6205-e8b7-4547-a3f3-ed9a2dd7dc85" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Finessy/css/Page1.css" afterPath="$PROJECT_DIR$/Finessy/css/Page1.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Finessy/css/UniversityList.css" afterPath="$PROJECT_DIR$/Finessy/css/UniversityList.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Finessy/view/UniversityList.html" afterPath="$PROJECT_DIR$/Finessy/view/UniversityList.html" />
@@ -22,7 +21,7 @@
       <file leaf-file-name="UniversityList.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Finessy/view/UniversityList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
+            <state relative-caret-position="549">
               <caret line="112" column="7" lean-forward="false" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
               <folding>
                 <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -37,8 +36,8 @@
       <file leaf-file-name="UniversityList.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Finessy/css/UniversityList.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="1530">
+              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,7 +62,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="832" />
@@ -147,15 +146,15 @@
       <updated>1507045217800</updated>
       <workItem from="1507045219888" duration="1350000" />
       <workItem from="1507048234969" duration="3226000" />
-      <workItem from="1507130302370" duration="51000" />
+      <workItem from="1507130302370" duration="664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4627000" />
+    <option name="totallyTimeSpent" value="5240000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -231,7 +230,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Finessy/view/UniversityList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
+        <state relative-caret-position="549">
           <caret line="112" column="7" lean-forward="false" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
           <folding>
             <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -244,8 +243,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Finessy/css/UniversityList.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state relative-caret-position="1530">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding />
         </state>
       </provider>

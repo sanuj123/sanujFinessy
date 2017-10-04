@@ -60,13 +60,13 @@ body .container-fluid{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 
 }
-.tile.col-sm-12{
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 10% ;
-}
+/*.tile.col-sm-12{*/
+/*margin-left: 0px;*/
+/*margin-right: 0px;*/
+/*padding-left: 0px;*/
+/*padding-right: 0px;*/
+/*padding-top: 10% ;*/
+/*}*/
 .top-heading{
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
