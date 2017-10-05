@@ -2,11 +2,14 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: #fafafb;
+    overflow-x: hidden;
 }
 body .container-fluid{
-
+    overflow: hidden;
+    padding-bottom: 2%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-
 .slant{
     overflow: hidden;
     position: absolute;
@@ -28,12 +31,18 @@ body .container-fluid{
 }
 @media screen and (max-width: 770px ) {
     .slant{
-        height: 60vmax;
+        height: 65vmax;
 
     }
     .slant-inner{
-        height: 60vmax;
-        transform: rotateZ(-13deg);
+        height: 65vmax;
+        transform: rotateZ(-12.5deg);
+    }
+
+}
+@media screen and (min-width: 845px){
+    .tile01 .col-sm-4{
+        width: 32%;
     }
 }
 .list{
@@ -43,16 +52,21 @@ body .container-fluid{
     margin-left: 0px;
     margin-right: 0px;
     transition: 0.3s;
-    padding: 1.5%;
+    padding: 1%;
 }
 .tile{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     padding: 0px;
     margin-top: 3%;
     border-radius: 5px;
     width:95%;
     background-color: white;
+    margin-left: 0.8%;
 }
+/*.tile01 .col-sm-4{*/
+/*width:32%;*/
+/*}*/
+
 
 .animate-box{
     opacity: 0;
@@ -72,13 +86,13 @@ body .container-fluid{
     transition: 0.3s;
     cursor: pointer;
 }
-.tile:hover .list {
-    border-left:6px solid dodgerblue;
-}
-.tile:hover img{
-    transform: scale(1.05);
-    transition: 0.3s;
-}
+/*.tile:hover .list {*/
+/*border-left:6px solid dodgerblue;*/
+/*}*/
+/*.tile:hover img{*/
+/*transform: scale(1.05);*/
+/*transition: 0.3s;*/
+/*}*/
 .tile img{
     width:100%;
 }
@@ -107,4 +121,120 @@ body .container-fluid{
     transform: scale(1.05);
     cursor: pointer;
     transition: 0.3s;
+}
+.hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+}
+.hover01{
+    margin-top: 2%;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    margin-top: 65%;
+
+}
+.effect{
+    animation: bounce-in-right 2s infinite;
+}
+@keyframes bounce-in-right {
+    0%,50%,100%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(9px);
+    }
+    70%{
+        transform: translateX(9px);
+    }
+
+}
+@media (max-width: 768px) {
+
+    .btn-circle.btn-xl {
+        width: 40px;
+        height: 40px;
+        padding: 12px 12px;
+        padding-left: 8px;
+        font-size: 14px;
+        line-height: 1.33;
+        border-radius: 35px;
+        background-color: whitesmoke;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        margin-top: 8%;
+    }
+    @keyframes bounce-in-right {
+        0%,50%,100%{
+            transform: translateX(0);
+        }
+        30%{
+            transform: translateX(5px);
+        }
+        70%{
+            transform: translateX(5px);
+        }
+
+    }
+}
+
+@media  (min-width: 769px) and (max-width: 992px) {
+    .btn-circle.btn-xl {
+        width: 50px;
+        height: 50px;
+        padding: 10px 16px;
+        font-size: 18px;
+        line-height: 1.33;
+        border-radius: 25px;
+        background-color: whitesmoke;
+    }
+}
+.request{
+    background:linear-gradient(to left, #EC6EAD, #3494E6);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top:12%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 52px;
+    color: purple;
+}
+.request01 h2{
+    font-size: 4.5vmax;
+    color: whitesmoke;
+
+}
+.request button:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    color: mediumpurple;
+    background-color: white;
+}
+@media  (max-width: 768px) {
+    .request01 h2{
+        font-size: 7vmax;
+    }
 }
