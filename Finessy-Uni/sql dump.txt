@@ -1,0 +1,27 @@
+1.create database finessydb;
+
+2.use finessydb;
+
+3.CREATE TABLE `university_details` (
+  `university_id` varchar(10) NOT NULL,
+  `university_name` varchar(100) NOT NULL,
+  `campus_size` varchar(10) NOT NULL,
+  `age` varchar(4) NOT NULL,
+  `type` varchar(7) NOT NULL,
+  `map_location` varchar(150) NOT NULL,
+  `endowment` varchar(30) NOT NULL,
+  `graduate_employbility_ranking` varchar(10) NOT NULL,
+  `total_students` varchar(10) NOT NULL,
+  `total_undergraduate_students` varchar(10) NOT NULL,
+  `total_graduate_students` varchar(10) NOT NULL,
+  `ranking` varchar(10) NOT NULL,
+  `percentage_of_international_students` varchar(50) NOT NULL,
+  `student_groups` varchar(5) NOT NULL,
+  `safety_issues` varchar(150) NOT NULL,
+  `acceptance_rate` varchar(150) NOT NULL,
+  `contact_details` varchar(20) NOT NULL);
+
+4.ALTER TABLE `university_details`
+  ADD PRIMARY KEY (`university_id`),
+  ADD UNIQUE KEY `map_location` (`map_location`);
+
