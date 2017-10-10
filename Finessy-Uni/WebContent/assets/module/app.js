@@ -1,0 +1,1 @@
+const app1 = angular.module("finessy",[]);
