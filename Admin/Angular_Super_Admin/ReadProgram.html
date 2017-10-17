@@ -1,0 +1,147 @@
+<div class="modal fade" tabindex="-1" role="dialog" data-rollback="static" id="my_modal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="resetFields();"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Read And Update Field</h3>
+            </div>
+            <div class="modal-body">
+                <h4>Field Details</h4>
+                <div class="row">
+                    <div class="col-xs-11 col-sm-11 col-md-11">
+
+                        <form class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="bestfield" class="col-sm-2 control-label">Best Market for that Field</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="bestfield" name="bestfield" placeholder="Market Name" ng-model="Field.bestfield">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="aftersalary" class="col-sm-2 control-label">Salary after that</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="aftersalary" name="aftersalary" placeholder="Salary after that" ng-model="Field.aftersalary">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="scope" class="col-sm-2 control-label">Scope of the Field in each Country</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="scope" name="scope" placeholder="Scope" ng-model="Field.scope">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="jobs" class="col-sm-2 control-label">Types of Jobs related to the Field</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="jobs" name="jobs" placeholder="Types of Jobs" ng-model="Field.jobs">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="theirsalaries" class="col-sm-2 control-label">Their Salaries</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="theirsalaries" name="theirsalaries" placeholder="Salaries" ng-model="Field.theirsalaries">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="noofstud" class="col-sm-2 control-label">Number of Students in that Field</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="noofstud" name="noofstud" placeholder="Number of Students in that Field" ng-model="Field.noofstud">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="interested" class="col-sm-2 control-label">No. of students in that field interested through our portal</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="interested" name="interested" placeholder="No. of students" ng-model="Field.interested">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="trends" class="col-sm-2 control-label">Current Trends</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="trends" name="trends" placeholder="Current Trends" ng-model="Field.trends">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="valueofdegree" class="col-sm-2 control-label">Value of Degree to Work for that Field</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="valueofdegree" name="valueofdegree" placeholder="Value of Degree" ng-model="Field.valueofdegree">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="hired" class="col-sm-2 control-label">How to get hired in that Field</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="hired" name="hired" placeholder="How to get hired in that Field" ng-model="Field.hired">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="resetFields();">Close</button>
+                <button type="button" class="btn btn-primary" ng-disabled="doDisable" ng-click="updateField();" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<div class="col-sm-10 col-md-10">
+    <div>
+
+        Search: <input type="text" ng-model="search" placeholder="Filter List" ng-click="current();">
+    </div>
+    <div> No. of records
+        <select ng-model="pageSize" id="pageSize" ng-click="paging();">
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>{{roundOff();}}
+    </div>
+</div>
+<br>
+<a ng-href="addProgram"><button type="button" class="btn btn-success">Add Program</button></a>
+
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <div class="table-responsive">
+            <table ng-init="loadData(); resetFields();" class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>Field Name</th>
+                        <th>Operations</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="x in FieldData|filter:search|startFrom:currentPage*pageSize | limitTo:pageSize">
+                        <td ng-hide="true">{{x.fieldId}}</td>
+                        <td>{{x.bestfield}}</td>
+                        <td><button class="btn btn-info" data-toggle="modal" data-target="#my_modal" ng-click="readField($index,true);" type="button"><i class="fa fa-eye"></i></button>&nbsp; &nbsp;<button class="btn btn-success" data-toggle="modal" data-target="#my_modal" ng-click="readField($index,false);" type="button"><i class="fa fa-edit"></i></button>&nbsp; &nbsp;<button class="btn btn-danger" ng-click="deleteField($index);"><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+<button type="button" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">prev</button> {{currentPage+1}}/{{numberOfPages()}}
+<button type="button" ng-disabled="currentPage>=FieldData.length/pageSize  " ng-click="currentPage=currentPage+1">next</button>

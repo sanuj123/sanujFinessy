@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="admin">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <base href="http://127.0.0.1:52219/Angular_Super_Admin/"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Dashboard.css">
+    
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="module/app.js"></script>
+    <script src="factory/universityReadFactory.js"></script>
+    <script src="factory/countryReadFactory.js"></script>
+    <script src="factory/programReadFactory.js"></script>
+    <script src="factory/universityAddFactory.js"></script>
+    <script src="factory/countryAddFactory.js"></script>
+    <script src="factory/programAddFactory.js"></script>
+    <script src="controller/countryReadController.js"></script>
+    <script src="controller/universityReadController.js"></script>
+    <script src="controller/programReadController.js"></script>
+    <script src="controller/universityAddController.js"></script>
+    <script src="controller/countryAddController.js"></script>
+    <script src="controller/programAddController.js"></script>
+    <script src="routes/SPA_route.js"></script>
+</head>
+<body>
+   <div class="container-fluid">
+       
+       <div class="col-sm-12 col-md-12" id="header"></div>
+       <div class="col-sm-12 col-md-12">
+           <div class="col-sm-2 col-md-2" id="sidenav">
+               <ul class="navlist">
+                   <li><a ng-href=""><h4>Users</h4></a></li>
+                   <li><a ng-href=""><h4>Posts</h4></a></li>
+                   <li><a ng-href=""><h4>Media</h4></a></li>
+                   <li><a ng-href=""><h4>Pages</h4></a></li>
+                   <li><a ng-href=""><h4>Menus</h4></a></li>
+                   <li><a ng-href="program"><h4>Programs</h4></a></li>
+                   <li><a ng-href="university"><h4>University</h4></a></li>
+                   <li><a ng-href="country"><h4>Country</h4></a></li>
+                   <li><a ng-href=""><h4>Settings</h4></a></li>
+                   <li><a ng-href=""><h4>Students</h4></a></li>
+                   <li><a ng-href=""><h4>Code Editor</h4></a></li>
+               </ul>
+               
+           </div>
+           <div class="col-sm-10 col-md-10">
+               <ng-view>
+                   
+               </ng-view>
+           </div>
+       </div>
+   </div>
+    
+</body>
+</html>

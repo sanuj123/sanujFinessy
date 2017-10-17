@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../js/angular.min.js"></script>
+    <script src="module/app.js"></script>
+    <script src="controller/adminController.js"></script>
+</head>
+<body ng-app="admin" ng-controller="adminController">
+  
+  {{dataList}}
+   
+   <div ng-repeat="i in dataList">
+       
+       <input type="checkbox" id="{{i}}" ng-model="dataList[i].selected" >
+       <label for="{{i}}">{{i}}</label>
+       
+   </div>
+   
+   <button type="button" ng-click="checkList(dataList)">Save</button>
+   
+   <span ng-repeat="select in selectedList">
+       {{select}}
+   </span>
+    
+</body>
+</html>
