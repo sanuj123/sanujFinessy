@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+body .container-fluid{
+    margin: 0px; !important;
+    padding: 0px; !important;
+}
+#header{
+    background-color: rebeccapurple;
+    height: 55px;
+}
+#header .col-sm-12{
+    margin: 0px; !important;
+    padding: 0px; !important;
+}#header .col-md-12{
+    margin: 0px; !important;
+    padding: 0px; !important;
+}
+#sidenav{
+    background-color: rebeccapurple;
+    
+}
+#sidenav .col-sm-2 .col-md-2{
+    margin: 0px; !important;
+    padding: 0px; !important;
+}
+#sidenav ul li{
+    list-style-type: none;
+    padding: 2%;
+    padding-bottom: 7.4%;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white;
+}
+#sidenav .navlist li h4{
+    color: white;
+}
+#page-container{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.animate-box{
+    opacity: 0;
+}
