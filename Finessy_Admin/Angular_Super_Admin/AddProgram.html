@@ -1,0 +1,90 @@
+<div class="row">
+    <div class="col-xs-11 col-sm-11 col-md-11">
+        <form class="form-horizontal">
+
+            <div class="form-group">
+                <label for="bestfield" class="col-sm-2 control-label">Best Market for that Field</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="bestfield" name="bestfield" placeholder="Market Name" ng-model="Field.bestfield">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="aftersalary" class="col-sm-2 control-label">Salary after that</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="aftersalary" name="aftersalary" placeholder="Salary after that" ng-model="Field.aftersalary">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="scope" class="col-sm-2 control-label">Scope of the Field in each Country</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="scope" name="scope" placeholder="Scope" ng-model="Field.scope">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="jobs" class="col-sm-2 control-label">Types of Jobs related to the Field</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="jobs" name="jobs" placeholder="Types of Jobs" ng-model="Field.jobs">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="theirsalaries" class="col-sm-2 control-label">Their Salaries</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="theirsalaries" name="theirsalaries" placeholder="Salaries" ng-model="Field.theirsalaries">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="noofstud" class="col-sm-2 control-label">Number of Students in that Field</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="noofstud" name="noofstud" placeholder="Number of Students in that Field" ng-model="Field.noofstud">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="interested" class="col-sm-2 control-label">No. of students in that field interested through our portal</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="interested" name="interested" placeholder="No. of students" ng-model="Field.interested">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="trends" class="col-sm-2 control-label">Current Trends</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="trends" name="trends" placeholder="Current Trends" ng-model="Field.trends">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="valueofdegree" class="col-sm-2 control-label">Value of Degree to Work for that Field</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="valueofdegree" name="valueofdegree" placeholder="Value of Degree" ng-model="Field.valueofdegree">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="hired" class="col-sm-2 control-label">How to get hired in that Field</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="hired" name="hired" placeholder="How to get hired in that Field" ng-model="Field.hired">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-11 col-md-11 ">
+        <h4>Status: {{errortext}}</h4>
+    </div>
+</div>
+<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+    <button type="button" class="btn btn-success pull-left" ng-click="addField();" ng-disabled="doDisable">Submit</button>
+    <button type="button" class="btn btn-danger pull-right" ng-click="resetFields();">Clear</button>
+
+</div>

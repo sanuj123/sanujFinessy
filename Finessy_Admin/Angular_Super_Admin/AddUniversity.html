@@ -1,0 +1,126 @@
+<div class="row">
+    <div class="col-xs-11 col-sm-11 col-md-11">
+        <form class="form-horizontal">
+
+            <div class="form-group">
+                <label for="uniName" class="col-sm-2 control-label">University Name</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="uniName" name="uniName" placeholder=" University Name" ng-model="University.uniName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="size" class="col-sm-2 control-label">Campus Size</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="size" name="size" placeholder="Campus Size" ng-model="University.size">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="uniAge" class="col-sm-2 control-label">Age</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="uniAge" name="uniAge" placeholder="University Age" ng-model="University.uniAge">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pub" class="col-sm-2 control-label">Public/Private</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="pub" name="pub" placeholder="Public/Private" ng-model="University.pub">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mapLoc" class="col-sm-2 control-label">Map Location</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="mapLoc" name="mapLoc" placeholder="Location" ng-model="University.mapLoc">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="endown" class="col-sm-2 control-label">Endowment</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="endown" name="endown" placeholder="Endownment" ng-model="University.endown">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="empRank" class="col-sm-2 control-label">Graduate Employbility Ranking</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="empRank" name="empRank" placeholder="Rank" ng-model="University.empRank">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="totalStud" class="col-sm-2 control-label">Total Students</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="totalStud" name="totalStud" placeholder="Total Students" ng-model="University.totalStud">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="totalUndStud" class="col-sm-2 control-label">Total Undergraduate Students</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="totalUndStud" name="totalUndStud" placeholder="Total Undergraduate Students" ng-model="University.totalUndStud">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="totalGradStud" class="col-sm-2 control-label">Total Graduate Students</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="totalGradStud" name="totalGradStud" placeholder="Total Graduate Students" ng-model="University.totalGradStud">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="uniRank" class="col-sm-2 control-label">University Rank</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="uniRank" name="uniRank" placeholder="Rank" ng-model="University.uniRank">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="intStud" class="col-sm-2 control-label">%tage of International Students</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="intStud" name="intStud" placeholder="percentage" ng-model="University.intStud">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="grup" class="col-sm-2 control-label">Students Groups</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="grup" name="grup" placeholder="Groups" ng-model="University.grup">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="accep" class="col-sm-2 control-label">Acceptance Rate</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="accep" name="accep" placeholder="Rate" ng-model="University.accep">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cont" class="col-sm-2 control-label">Contact Details</label>
+
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" id="cont" name="cont" placeholder="Details" ng-model="University.cont">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-11 col-md-11 ">
+        <h4>Status: {{errortext}}</h4>
+    </div>
+</div>
+<div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+    <button type="button" class="btn btn-success pull-left" ng-click="addUniversity();" ng-disabled="doDisable">Submit</button>
+    <button type="button" class="btn btn-danger pull-right" ng-click="resetFields();">Clear</button>
+
+</div>

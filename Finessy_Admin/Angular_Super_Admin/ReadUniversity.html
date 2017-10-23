@@ -1,0 +1,185 @@
+<div class="modal fade" tabindex="-1" role="dialog" data-rollback="static" id="my_modal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="resetFields();"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Read And Update University</h3>
+            </div>
+            <div class="modal-body">
+                <h4>University Details</h4>
+                <div class="row">
+                    <div class="col-xs-11 col-sm-11 col-md-11">
+                        <form class="form-horizontal">
+
+                            <div class="form-group">
+                                <label></label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="uniName" class="col-sm-2 control-label">University Name</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="uniName" name="uniName" placeholder=" University Name" ng-model="University.uniName">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="size" class="col-sm-2 control-label">Campus Size</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="size" name="size" placeholder="Campus Size" ng-model="University.size">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uniAge" class="col-sm-2 control-label">Age</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="uniAge" name="uniAge" placeholder="University Age" ng-model="University.uniAge">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pub" class="col-sm-2 control-label">Public/Private</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="pub" name="pub" placeholder="Public/Private" ng-model="University.pub">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="mapLoc" class="col-sm-2 control-label">Map Location</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="mapLoc" name="mapLoc" placeholder="Location" ng-model="University.mapLoc">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="endown" class="col-sm-2 control-label">Endownment</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="endown" name="endown" placeholder="Endownment" ng-model="University.endown">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="empRank" class="col-sm-2 control-label">Graduate Employbility Ranking</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="empRank" name="empRank" placeholder="Rank" ng-model="University.empRank">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="totalStud" class="col-sm-2 control-label">Total Students</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="totalStud" name="totalStud" placeholder="Total Students" ng-model="University.totalStud">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="totalUndStud" class="col-sm-2 control-label">Total Undergraduate Students</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="totalUndStud" name="totalUndStud" placeholder="Total Undergraduate Students" ng-model="University.totalUndStud">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="totalGradStud" class="col-sm-2 control-label">Total Graduate Students</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="totalGradStud" name="totalGradStud" placeholder="Total Graduate Students" ng-model="University.totalGradStud">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uniRank" class="col-sm-2 control-label">University Rank</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="uniRank" name="uniRank" placeholder="Rank" ng-model="University.uniRank">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="intStud" class="col-sm-2 control-label">%tage of International Students</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="intStud" name="intStud" placeholder="percentage" ng-model="University.intStud">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="grup" class="col-sm-2 control-label">Students Groups</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="grup" name="grup" placeholder="Groups" ng-model="University.grup">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="accep" class="col-sm-2 control-label">Acceptance Rate</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="accep" name="accep" placeholder="Rate" ng-model="University.accep">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cont" class="col-sm-2 control-label">Contact Details</label>
+
+                                <div class="col-sm-10">
+                                    <input type="tel" class="form-control" id="cont" name="cont" placeholder="Details" ng-model="University.cont">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="resetFields();">Close</button>
+                <button type="button" class="btn btn-primary" ng-disabled="doDisable" ng-click="updateUniversity();" data-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<div class="col-sm-10 col-md-10">
+    <div>
+
+        Search: <input type="text" ng-model="search" placeholder="Filter List" ng-click="current();">
+    </div>
+    <div> No. of records
+        <select ng-model="pageSize" id="pageSize" ng-click="paging();">
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>{{roundOff();}}
+    </div>
+</div>
+<br>
+<a ng-href="#/addUniversity"><button type="button" class="btn btn-success">Add University</button></a>
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <div class="table-responsive">
+            <table ng-init="loadData(); resetFields();" class="table table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>University Name</th>
+                        <th>Operations</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="x in universityData|filter:search|startFrom:currentPage*pageSize | limitTo:pageSize">
+                        <td ng-hide="true">{{x.uniId}}</td>
+                        <td>{{x.uniName}}</td>
+                        <td><button class="btn btn-info" data-toggle="modal" data-target="#my_modal" ng-click="readUniversity($index,true);" type="button"><i class="fa fa-eye"></i></button>&nbsp; &nbsp;<button class="btn btn-success" data-toggle="modal" data-target="#my_modal" ng-click="readUniversity($index,false);" type="button"><i class="fa fa-edit"></i></button>&nbsp; &nbsp;<button class="btn btn-danger" ng-click="deleteUniversity($index);"><i class="fa fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+<button type="button" ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">prev</button> {{currentPage+1}}/{{numberOfPages()}}
+<button type="button" ng-disabled="currentPage>=universityData.length/pageSize  " ng-click="currentPage=currentPage+1">next</button>
