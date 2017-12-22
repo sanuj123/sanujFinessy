@@ -12,6 +12,10 @@ body{
 .pageguest{
     font-family: 'Lato', sans-serif;
 }
+body .container-fluid{
+    margin:0px;
+}
+
 body header{
     background-color: #00438b;
     margin: 0px;
@@ -78,7 +82,6 @@ body header{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 500px;
     overflow: hidden;
     margin-top: -20px;
 }
@@ -88,7 +91,6 @@ body header{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 490px;
     overflow: hidden;
 }
 .tiles3{
@@ -97,7 +99,6 @@ body header{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 490px;
     overflow: hidden;
 }
 .tiles4{
@@ -106,7 +107,6 @@ body header{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 450px;
     overflow: hidden;
 }
 .tiles5{
@@ -117,7 +117,6 @@ body header{
     background-position: center center;
     position: relative;
     width: 100%;
-    height: 450px;
     overflow: hidden;
 }
 
@@ -126,9 +125,10 @@ body header{
     /*bottom: 0px;*/
     /*left: 0;*/
     /*width: 100%;*/
-    height: 100%;
+    /*height: 100%;*/
     /*padding: 90px 10px;*/
-     padding-top: 5%;
+     padding-top: 4%;
+     padding-bottom: 6%;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
     /*background-attachment: fixed;*/
     /*overflow: auto;*/
@@ -183,6 +183,8 @@ body header{
     text-shadow: 1px 1px rgba(0,0,0,0.2);
     text-align: center;
     line-height: 150%;
+    padding-top: 6%;
+    padding-bottom: 2%;
 }
  .center-block>.col-sm-5 > h2{
      margin-left: -10%;
@@ -194,6 +196,8 @@ body header{
      text-align: center;
      font-style: italic;
      line-height: 120%;
+     padding-top: 6%;
+     padding-bottom: 2%;
  }
 .center-block > h2{
     margin-top: -1%;
@@ -219,6 +223,7 @@ body header{
      font-size: 30px;
      /*text-align: center;*/
      line-height: 110%;
+     /*margin-bottom: 10%;*/
  }
  .center-block > .col-sm-3 > .btn{
      background-color: #f80;
@@ -227,7 +232,7 @@ body header{
      color: white;
      position: relative;
      left:40%;
-     top:120px;
+     top: 150px;
      padding: 25px 65px;
      z-index: 1;
      transform: scale(1);
@@ -265,19 +270,22 @@ footer > .row > .col-sm-4{
     }
     .center-block > .col-sm-5 > h3{
         font-size: 22px;
-        margin-left: 30%;
+        margin-left: 20%;
     }
     .center-block > .col-sm-3 > .btn{
-        left:35%;
+        left:25%;
         top:250px;
-        padding: 15px 40px;
+        padding: 12px 32px;
     }
-    .tiles2{
-        height: 440px;
+    .tiles2 > .center-block > .col-sm-3 > .btn {
+    }
+    .tiles2 > .center-block{
+        padding-top: 30%;
+        padding-bottom: 30%;
     }
     .tiles3 > .center-block > .col-sm-3 > .btn{
-        margin-top: -220px;
-
+        top: 15px;
+        margin-bottom: 11%;
     }
     .tiles3 > .center-block > .col-sm-5 > h2 {
         margin-left: 7%;
@@ -286,22 +294,27 @@ footer > .row > .col-sm-4{
     }
     .tiles4 > .center-block > .col-sm-3 > .btn{
         margin-top: -40px;
-        margin-left: 40px;
+        margin-left: 0px;
+        left: 25%;
     }
     .tiles4 > .center-block > h2{
-        font-size: 43px;
+        font-size: 40px;
         margin-top: -30px;
+        padding-bottom: 10%;
     }
-    .tiles4{
-        height: 350px;
+    .tiles4 > .center-block{
+        padding-bottom: 20%;
     }
+    /*.tiles4{*/
+        /*height: 350px;*/
+    /*}*/
     .tiles1 > .center-block > h1{
         margin-top: -30px;
         font-size: 50px;
     }
-    .tiles1{
-        height: 460px;
-    }
+    /*.tiles1{*/
+        /*height: 460px;*/
+    /*}*/
     .center-block{
         padding-top: 13%;
     }
