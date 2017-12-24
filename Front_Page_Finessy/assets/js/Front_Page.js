@@ -1,5 +1,7 @@
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
+var attach = false;
+
 jQuery.extend( jQuery.easing,
     {
         def: 'easeOutQuad',
@@ -13,10 +15,14 @@ jQuery.extend( jQuery.easing,
 
 $(function(){
     $('.navbar').affix({
+
         offset: {
             /* Affix the navbar after scroll below header */
-            top: $("header").outerHeight(true)}
+            top: $("header").outerHeight(true)
+
+        }
     });
+
 });
 var contentWayPoint = function() {
     var i = 0;
@@ -44,8 +50,32 @@ var contentWayPoint = function() {
     } , { offset: '85%' } );
 };
 
+function move() {
+    document.querySelector('.tiles2').scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
 $(document).ready(function(){
     contentWayPoint();
-
+    $(".move").on('click',function (event) {
+        $('html, body').animate({
+            scrollTop: $('.tiles2').offset().top-200
+        },800);
+    });
+    var scroll_start = 0;
+    var startchange = $('.navbar');
+    var offset = startchange.offset();
+     if(startchange.length){
+         $(document).scroll(function () {
+             scroll_start = $(this).scrollTop();
+             if(scroll_start > offset.top){
+                 $('.navbar').css('background-color', '#1686d9');
+             }
+             else{
+                 $('.navbar').css('background-color', 'rgba(0,0,0,0.3)');
+             }
+         });
+     }
 
 });
